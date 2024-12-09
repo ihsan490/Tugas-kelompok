@@ -1,0 +1,97 @@
+/* Reset dan Pengaturan Umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007aff;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tugas Section */
+.task-section {
+    list-style: none;
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.task:hover {
+    background-color: #333;
+}
+
+.task .circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.task-subtitle {
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+/* Pesan jika Tidak Ada Tugas */
+.no-tasks {
+    color: #aaa;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .task-section {
+        padding: 0 10px;
+    }
+
+    .task {
+        padding: 8px;
+    }
+
+    .task-title {
+        font-size: 1em;
+    }
+
+    .task-subtitle {
+        font-size: 0.85em;
+    }
+}
